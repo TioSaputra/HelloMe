@@ -16,9 +16,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:onClick="telpPacar">
             <ImageView
                 android:layout_width="match_parent"
+                android:padding="40dp"
                 android:layout_height="150dp"
                 android:src="@drawable/ic_local_phone_black_24dp"/>
             <TextView
@@ -31,9 +33,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:onClick="telpRumah">
             <ImageView
                 android:layout_width="match_parent"
+                android:padding="40dp"
                 android:layout_height="150dp"
                 android:src="@drawable/ic_phone_android_black_24dp"/>
             <TextView
@@ -63,26 +67,29 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:padding="40dp"
                 android:src="@drawable/ic_sms_24dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Telpon Pacar"
+                android:text="SMS Pacar"
                 android:textAlignment="center"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:onClick="smsRumah">
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:padding="40dp"
                 android:src="@drawable/ic_sms_fa_24dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Telpon Rumah"
+                android:text="SMS Rumah"
                 android:textAlignment="center"/>
         </LinearLayout>
     </LinearLayout>
