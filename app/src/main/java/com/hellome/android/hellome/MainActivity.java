@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
     private void sms(String nomor){
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", nomor, null)));
     }
+    private void sendSMSDirect(String nomor){
+        Uri uri = Uri.parse("smsto:"+nomor);
+        intent = new Intent(Intent.ACTION_SENDTO, uri);
+        intent.putExtra("sms_body", "Selemat malam kami dari kepolisian sedang mencari seseorang yang benama ");
+        startActivity(intent);
+    }
 
     public void telpPacar(View view) {
 
@@ -35,5 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void smsRumah(View view) {
         sms("089602608573");
+    }
+
+    public void smsWithBody(View view) {
+        sendSMSDirect("089602608573");
     }
 }
